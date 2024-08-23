@@ -2,59 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayushi's Portfolio</title>
+    <title>Ayushi Singh - Portfolio</title>
+    <!-- Link to the single stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="#" class="logo">Ayushi Singh</a>
+                <h1 class="logo">Ayushi Singh</h1>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayushi Singh - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Ayushi Singh</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
             <h2>Welcome to My Portfolio</h2>
-            <p>This is where you introduce yourself and what you do.</p>
-        </section>
-    </main>
+            <p>I am Ayushi Singh, a passionate developer and tech enthusiast.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I specialize in digital transformation and technology solutions, integrating human psychology and IT to benefit various industries.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A description of the first project goes here.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A description of the second project goes here.</p>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or just a friendly chat.</p>
+            <a href="mailto:your-email@example.com" class="btn">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Ayushi Singh</p>
+        <p>&copy; 2024 Ayushi Singh. All rights reserved.</p>
     </footer>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
-
