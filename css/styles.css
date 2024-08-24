@@ -6,17 +6,19 @@ body {
     color: #333;
     line-height: 1.6;
     background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
 }
 
 /* Links */
 a {
     color: #3498db;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
     color: #2c3e50;
+    transform: scale(1.05);
 }
 
 /* Navigation Bar */
@@ -27,6 +29,7 @@ a:hover {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
 .navbar .container {
@@ -37,7 +40,8 @@ a:hover {
 }
 
 .navbar .logo {
-    width: 150px; /* Adjust based on your logo size */
+    width: 150px;
+    transition: transform 0.3s ease;
 }
 
 .navbar ul {
@@ -54,13 +58,14 @@ a:hover {
 .navbar ul li a {
     color: #333;
     padding: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar ul li a:hover {
     background-color: #3498db;
     color: #ffffff;
     border-radius: 5px;
+    transform: scale(1.1);
 }
 
 /* Hero/Banner Section */
@@ -70,16 +75,19 @@ a:hover {
     text-align: center;
     padding: 100px 0;
     margin-top: 60px;
+    transition: all 0.3s ease;
 }
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
 }
 
 .hero p {
     font-size: 18px;
     margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
 }
 
 .hero .btn {
@@ -89,12 +97,36 @@ a:hover {
     color: #3498db;
     border-radius: 5px;
     text-transform: uppercase;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .hero .btn:hover {
     background-color: #3498db;
     color: #ffffff;
+    transform: translateY(-5px);
+}
+
+/* Animation for Hero Text */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Section Styles */
@@ -125,12 +157,20 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-content div {
     flex: 1;
     min-width: 300px;
     padding: 20px;
+    transform: translateY(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Services Section */
