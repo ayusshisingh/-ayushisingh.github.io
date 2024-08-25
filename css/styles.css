@@ -9,6 +9,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* ---------------------------------------------------------------------------- */
+
 /* Links */
 a {
     color: #3498db;
@@ -20,6 +22,8 @@ a:hover {
     color: #2c3e50;
     transform: scale(1.05);
 }
+
+/* ---------------------------------------------------------------------------- */
 
 /* Navigation Bar */
 .navbar {
@@ -67,6 +71,8 @@ a:hover {
     border-radius: 5px;
     transform: scale(1.1);
 }
+
+/* ---------------------------------------------------------------------------- */
 
 /* Hero/Banner Section */
 .hero {
@@ -128,6 +134,139 @@ a:hover {
         transform: translateY(0);
     }
 }
+
+/* ---------------------------------------------------------------------------- */
+
+/* Hero Projects Banner */
+
+.projects_hero {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 60px;
+    transition: all 0.3s ease;
+}
+
+.projects_hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.projects_hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.projects_hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #3498db;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.projects_hero .btn:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+/* Animation for Projects Hero Text */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* Hero Speaking Banner */
+
+
+.speaking_hero {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 60px;
+    transition: all 0.3s ease;
+}
+
+.speaking_hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.speaking_hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.speaking_hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #3498db;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.speaking_hero .btn:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+/* Animation for Speaking Hero Text */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------------- */
+
 
 /* Section Styles */
 .section {
@@ -215,11 +354,105 @@ a:hover {
 
 /* Footer */
 footer {
+   /* Footer styling */
     background-color: #333;
-    color: #ffffff;
-    text-align: center;
+    color: #fff;
     padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-quick-contact a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-social-media {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.8;
+  }
+  /* Project Section Styling */
+.project-section {
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .project-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .project-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .project-text h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .project-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .project-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Button Styling */
+  .learn-more-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #0056b3;
+  }
+  
