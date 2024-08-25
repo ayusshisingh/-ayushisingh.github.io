@@ -1,10 +1,6 @@
 README.md: This file should include:
 
-Project Overview
-Technologies Used
-Setup Instructions
-How to Contribute
-Contact Information
+Project Overview, Technologies Used, Setup Instructions, How to Contribute, Contact Information
 
 
 # ayushisingh.github.io
