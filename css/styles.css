@@ -205,6 +205,68 @@ a:hover {
         text-align: center;
     }
 }
+
+/* ----------------------------------------------- */
+
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services-heading {
+    display: flex;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.services-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 30%;
+    margin: 20px 0;
+}
+
+.services-image {
+    width: 100%;
+    height: auto;
+}
+
+.services-card h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.services-card p {
+    padding: 0 15px;
+    color: #666;
+}
+/* ----------------------------------------------- */
+/* Button Always*/
+
+.btn {
+    background-color: #0d2d50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
 /* ----------------------------------------------- */
 /* Section Styles */
 
@@ -253,6 +315,132 @@ a:hover {
 
 /* ----------------------------------------------- */
 
+
+.custom-about-section {
+    padding: 40px;
+    background-color: #f9f9f9; /* Background color for the section */
+}
+
+.custom-about-content {
+    display: flex; /* Use Flexbox to arrange the text and image side-by-side */
+    align-items: center; /* Center the content vertically */
+    justify-content: space-between; /* Space between text and image */
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.custom-about-text {
+    flex: 1; /* Allow the text to take up remaining space */
+    padding-right: 20px; /* Spacing to the right of the text */
+}
+
+.custom-about-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color for the heading */
+}
+
+.custom-about-text h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #555; /* Slightly lighter text color for the subtitle */
+}
+
+.custom-about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; /* Neutral text color for the paragraph */
+    margin-bottom: 20px;
+}
+
+.custom-about-text .btn-secondary {
+    background-color: #007bff; /* Custom button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for the button */
+}
+
+.custom-about-image {
+    flex: 1; /* Allow the image to take up remaining space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.custom-about-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+/* ----------------------------------------------- */
+
+
+.testimonial-section {
+    padding: 40px;
+    background-color: #f0f0f0; /* Light gray background color */
+    text-align: center; /* Center align the text */
+}
+
+.testimonial-heading {
+    font-size: 32px;
+    color: #333; /* Darker heading color */
+    margin-bottom: 20px;
+}
+
+.testimonial-slider {
+    position: relative; /* Position relative to allow absolute positioning of slides */
+    max-width: 800px; /* Maximum width for the slider */
+    margin: 0 auto; /* Center the slider horizontally */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.testimonial-slide {
+    display: none; /* Hide all slides by default */
+    padding: 20px;
+    color: #555; /* Text color for the message */
+}
+
+.testimonial-slide.active {
+    display: block; /* Display the active slide */
+}
+
+.testimonial-message {
+    font-style: italic; /* Italicize the message text */
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #444; /* Darker color for testimonial text */
+}
+
+.testimonial-author {
+    font-weight: bold; /* Bold text for the author's name and designation */
+    font-size: 16px;
+    color: #666; /* Neutral color for the author's text */
+}
+
+.testimonial-controls {
+    margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%; /* Rounded buttons */
+    font-size: 18px;
+    margin: 0 10px; /* Spacing between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+
+
 /* Footer */
 footer {
    /* Footer styling */
@@ -292,55 +480,5 @@ footer {
   .social-icon:hover {
     opacity: 0.8;
   }
- 
-
-
-  .books-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 40px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.book-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    width: 30%;
-    margin: 20px 0;
-}
-
-.book-image {
-    width: 100%;
-    height: auto;
-}
-
-.book-card h2 {
-    margin: 10px 0;
-    color: #333;
-}
-
-.book-card p {
-    padding: 0 15px;
-    color: #666;
-}
-
-.btn {
-    background-color: #0d2d50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin: 15px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
+/*...................................*/
 
