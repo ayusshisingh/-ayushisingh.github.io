@@ -1,0 +1,222 @@
+/* Reset some default styles */
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Links */
+a {
+    color: #030a0f;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #2c3e50;
+    transform: scale(1.05);
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #333;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* ---------------------------------------------------------------------------- */
+
+
+
+
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  body {
+    background-color: #121212;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(to right, #1c1c1c, #2a2a2a);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2em;
+  }
+  
+  /* Contact Container */
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    width: 45%;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #4CAF50;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Contact Details */
+  .contact-details {
+    width: 45%;
+  }
+  
+  .office-hours, .footer-social-media {
+    margin-bottom: 30px;
+  }
+  
+  .footer-social-media {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.8;
+  }
+
+  /* Footer */
+footer {
+    /* Footer styling */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+    transition: all 0.3s ease;
+   }
+   
+   .footer-container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+   
+   .footer-quick-contact a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: bold;
+   }
+   
+   .footer-social-media {
+     display: flex;
+     gap: 15px;
+   }
+   
+   .social-icon {
+     width: 24px;
+     height: 24px;
+   }
+   
+   .social-icon:hover {
+     opacity: 0.8;
+   }
+ /*...................................*/
+ 
+ 
+  

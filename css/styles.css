@@ -373,6 +373,8 @@ a:hover {
     height: auto;
     border-radius: 8px; /* Optional: Rounded corners for the image */
 }
+
+
 /* ----------------------------------------------- */
 
 
@@ -440,6 +442,46 @@ a:hover {
     background-color: #0056b3; /* Button hover color */
 }
 
+/*-------------------------------*/
+
+.strenure-section {
+    padding: 20px;
+    background-color: #0d2d50; /* Background color for the thin strip */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align the text and content */
+}
+
+.strenure-content {
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.company-logo {
+    max-width: 150px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the logo */
+}
+
+.company-description {
+    font-size: 16px;
+    margin-bottom: 20px; /* Space below the description */
+}
+
+.btn-visit-website {
+    background-color: #ffffff; /* White background color for the button */
+    color: #0d2d50; /* Text color matching the section background */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-visit-website:hover {
+    background-color: #e0e0e0; /* Light gray background on hover */
+}
+
+/*-----------------------------------------*/
 
 /* Footer */
 footer {
@@ -447,8 +489,8 @@ footer {
    background: linear-gradient(to right, #6dd5ed, #2193b0);
    color: #fff;
    text-align: center;
-   padding: 100px 0;
-   margin-top: 60px;
+   padding: 20px 0;
+   margin-top: 0px;
    transition: all 0.3s ease;
   }
   

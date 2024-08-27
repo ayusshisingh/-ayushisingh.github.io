@@ -18,29 +18,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-// Testimonial Slide
-
+// reviews Slide
 document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelectorAll('.testimonial-slide');
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    const slides = document.querySelectorAll('.review-card');
     let currentIndex = 0;
-    let slideInterval = setInterval(nextSlide, 3000); // Slide every 3 seconds
 
-    function nextSlide() {
-        slides[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].classList.add('active');
+    function showNextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
+        const offset = -currentIndex * 100; // Move to the next slide
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
     }
 
-    // Pause the slider on mouseover
-    document.getElementById('testimonial-slider').addEventListener('mouseover', function() {
-        clearInterval(slideInterval);
-    });
-
-    // Resume the slider on mouseout
-    document.getElementById('testimonial-slider').addEventListener('mouseout', function() {
-        slideInterval = setInterval(nextSlide, 3000);
-    });
-
-    // Initialize the first slide as active
-    slides[currentIndex].classList.add('active');
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
 });
+

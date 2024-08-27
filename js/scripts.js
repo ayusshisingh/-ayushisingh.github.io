@@ -21,6 +21,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+
 // JavaScript for Testimonial Slider
 const slides = document.querySelectorAll('.testimonial-slide');
 const prevButton = document.querySelector('.prev-btn');
