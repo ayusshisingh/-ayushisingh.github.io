@@ -137,7 +137,7 @@ a:hover {
 
 /* ----------------------------------------------- */
 
-/* speaking styles.css */
+/* Speaking styles.css */
 #speaking-engagements {
     padding: 20px;
     background-color: #f9f9f9;
@@ -191,7 +191,8 @@ a:hover {
     border: none;
     margin-top: 10px;
 }
-/* end of speaking styles.css */
+/* End of speaking styles.css */
+
 /* Button Styles */
 .btn {
     background-color: #0d2d50;
@@ -211,13 +212,17 @@ a:hover {
 
 /* ----------------------------------------------- */
 
-
-.strenure-section {
-    padding: 20px;
-    background-color: #0d2d50; /* Background color for the thin strip */
-    color: #fff; /* White text color */
-    text-align: center; /* Center align the text and content */
-}
+/* Strenure Section */
+    .strenure-section {
+        padding: 20px 0; /* Vertical padding only */
+        background-color: #0d2d50; /* Background color for the thin strip */
+        color: #fff; /* White text color */
+        text-align: center; /* Center align the text and content */
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* No margin */
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+    
 
 .strenure-content {
     max-width: 1200px; /* Maximum width of the content */
@@ -229,10 +234,11 @@ a:hover {
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Space below the logo */
 }
+
 .company-logo:hover {
     transform: scale(1.1); /* Slightly increase the size to create a bulge effect */
-  }
-  
+}
+
 .company-description {
     font-size: 16px;
     margin-bottom: 20px; /* Space below the description */
@@ -262,33 +268,33 @@ footer {
     padding: 20px 0;
     margin-top: 0px;
     transition: all 0.3s ease;
-   }
-   
-   .footer-container {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 20px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-   }
-   
-   .footer-quick-contact {
-     color: #000101;
-     text-decoration: none;
-     font-weight: light;
-   }
-   
-   .footer-social-media {
-     display: flex;
-     gap: 15px;
-   }
-   
-   .social-icon {
-     width: 24px;
-     height: 24px;
-   }
-   
-   .social-icon:hover {
-     opacity: 0.8;
-   }
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-quick-contact {
+    color: #000101;
+    text-decoration: none;
+    font-weight: light;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
