@@ -444,42 +444,42 @@ a:hover {
     animation-play-state: paused;
 }
 
-footer {
-    /* Footer styling */
-    background: linear-gradient(to right, #ffffff, #ffffff);
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 0px;
-    transition: all 0.3s ease;
-   }
-   
-   .footer-container {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 20px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-   }
-   
-   .footer-quick-contact {
-     color: #000101;
-     text-decoration: none;
-     font-weight: light;
-   }
-   
-   .footer-social-media {
-     display: flex;
-     gap: 15px;
-   }
-   
-   .social-icon {
-     width: 24px;
-     height: 24px;
-   }
-   
-   .social-icon:hover {
-     opacity: 0.8;
-   }
- /*...................................*/
+    footer {
+        /* Footer styling */
+        background: linear-gradient(to right, #ffffff, #ffffff);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 0px;
+        transition: all 0.3s ease;
+       }
+       
+       .footer-container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+       
+       .footer-quick-contact {
+         color: #000101;
+         text-decoration: none;
+         font-weight: light;
+       }
+       
+       .footer-social-media {
+         display: flex;
+         gap: 15px;
+       }
+       
+       .social-icon {
+         width: 24px;
+         height: 24px;
+       }
+       
+       .social-icon:hover {
+         opacity: 0.8;
+       }
+     /*...................................*/

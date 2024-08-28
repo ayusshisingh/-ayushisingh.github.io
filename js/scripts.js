@@ -42,19 +42,21 @@ function showSlide(index) {
 // Show the initial slide
 showSlide(currentSlide);
 
-// Event listeners for the buttons
-prevButton.addEventListener('click', () => {
-    currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
-    showSlide(currentSlide);
-});
-
-nextButton.addEventListener('click', () => {
-    currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
-    showSlide(currentSlide);
-});
-
-// Optional: Auto slide every 3 seconds
-setInterval(() => {
-    currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
-    showSlide(currentSlide);
-}, 3000);
+// JavaScript to handle testimonial rotation
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonials = document.querySelectorAll('.testimonial');
+    let currentIndex = 0;
+  
+    function showNextTestimonial() {
+      testimonials[currentIndex].classList.remove('active'); // Hide current testimonial
+      currentIndex = (currentIndex + 1) % testimonials.length; // Move to next testimonial
+      testimonials[currentIndex].classList.add('active'); // Show next testimonial
+    }
+  
+    // Initial display setup
+    testimonials[currentIndex].classList.add('active'); // Show the first testimonial
+  
+    // Rotate testimonials every 5 seconds
+    setInterval(showNextTestimonial, 5000);
+  });
+  
