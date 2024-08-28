@@ -444,7 +444,10 @@ a:hover {
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Space below the logo */
 }
-
+.company-logo:hover {
+    transform: scale(1.1); /* Slightly increase the size to create a bulge effect */
+  }
+  
 .company-description {
     font-size: 16px;
     margin-bottom: 20px; /* Space below the description */
