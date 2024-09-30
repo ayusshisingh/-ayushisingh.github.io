@@ -136,6 +136,56 @@ a:hover {
 }
 
 /* ----------------------------------------------- */
+.reviews-section {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.reviews-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    animation: slide 10s linear infinite;
+}
+
+.review-slide {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.review {
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review p {
+    font-size: 16px;
+    color: #666;
+}
+
+.review h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 
 /* Section Styles */
@@ -194,12 +244,12 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    width: 30%;
+    width: 45%;
     margin: 20px 0;
 }
 
 .book-image {
-    width: 100%;
+    width: 30%;
     height: auto;
 }
 
@@ -310,3 +360,5 @@ footer {
    .social-icon:hover {
      opacity: 0.8;
    }
+
+    

@@ -18,18 +18,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-// reviews Slide
-document.addEventListener('DOMContentLoaded', function() {
-    const sliderWrapper = document.querySelector('.slider-wrapper');
-    const slides = document.querySelectorAll('.review-card');
-    let currentIndex = 0;
+const slider = document.querySelector('.reviews-slider');
 
-    function showNextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
-        const offset = -currentIndex * 100; // Move to the next slide
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-    }
-
-    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+slider.addEventListener('mouseover', () => {
+    slider.style.animationPlayState = 'paused';
 });
 
+slider.addEventListener('mouseout', () => {
+    slider.style.animationPlayState = 'running';
+});
