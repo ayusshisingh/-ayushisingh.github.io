@@ -9,8 +9,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* ---------------------------------------------------------------------------- */
-
 /* Links */
 a {
     color: #030a0f;
@@ -22,8 +20,6 @@ a:hover {
     color: #2c3e50;
     transform: scale(1.05);
 }
-
-/* ---------------------------------------------------------------------------- */
 
 /* Navigation Bar */
 .navbar {
@@ -40,7 +36,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 40px; /* Increased padding for better spacing */
 }
 
 .navbar .logo {
@@ -56,7 +52,7 @@ a:hover {
 }
 
 .navbar ul li {
-    margin-left: 20px;
+    margin-left: 30px; /* Increased spacing between nav items */
 }
 
 .navbar ul li a {
@@ -72,14 +68,12 @@ a:hover {
     transform: scale(1.1);
 }
 
-/* ---------------------------------------------------------------------------- */
-
 /* Hero/Banner Section */
 .hero {
     background: linear-gradient(to right, #6dd5ed, #2193b0);
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 120px 0; /* Increased padding for better hero section spacing */
     margin-top: 60px;
     transition: all 0.3s ease;
 }
@@ -91,14 +85,14 @@ a:hover {
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 20px; /* Increased font size for better visibility */
     margin-bottom: 30px;
     animation: fadeInUp 1s ease-out;
 }
 
 .hero .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px; /* Increased button padding */
     background-color: #ffffff;
     color: #3498db;
     border-radius: 5px;
@@ -135,7 +129,232 @@ a:hover {
     }
 }
 
-/* ----------------------------------------------- */
+/* Contact Form Section Styling */
+#contact {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    max-width: 600px;
+    margin: 40px auto; /* Increased margin for better spacing */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 12px; /* Increased padding for inputs */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Speaking Engagements Section */
+#speaking-engagements {
+    padding: 40px 0; /* Increased padding for speaking engagements section */
+    background-color: #f9f9f9;
+}
+
+#speaking-engagements h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.event-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.event-content {
+    padding: 15px;
+}
+
+.event-content h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.event-content p {
+    color: #666;
+    font-size: 14px;
+}
+
+.video-embed iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Reviews Section */
+.reviews-section {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.reviews-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    animation: slide 10s linear infinite;
+}
+
+.review-slide {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.review {
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review p {
+    font-size: 16px;
+    color: #666;
+}
+
+.review h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333; /* Darker text color */
+}
+
+.project-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff; /* White background for each project section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.project-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensure image covers area */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.project-info {
+    flex: 1; /* Allow text to take up remaining space */
+}
+
+.project-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #0d2d50; /* Highlight color */
+}
+
+.project-more-info {
+    font-size: 16px;
+    color: #666; /* Lighter text color for description */
+    margin-bottom: 20px;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #666; /* Lighter text color for description */
+    margin-bottom: 20px;
+}
+
+.btn-github {
+    background-color: #0d2d50; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-github:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+    color: white;
+}
 
 /* About Me Section */
 .about-me {
@@ -192,9 +411,34 @@ a:hover {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    .about-me-content {
+    /* Adjust Navbar for Mobile */
+    .navbar ul {
         flex-direction: column;
-        text-align: center;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        left: 0;
+        right: 0;
+        background-color: #ffffff; /* Match navbar background */
+        display: none; /* Hidden by default */
+    }
+
+    .navbar ul.show {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .navbar .logo {
+        width: 120px; /* Smaller logo on mobile */
+    }
+
+    .navbar .container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px 20px; /* Padding for mobile */
+    }
+
+    .about-me {
+        flex-direction: column; /* Stack image and text */
     }
 
     .about-me-image {
@@ -202,12 +446,63 @@ a:hover {
         margin-bottom: 20px;
     }
 
-    .about-me-text h2, .about-me-text h4 {
+    .about-me-text h2,
+    .about-me-text h4 {
         text-align: center;
     }
-}
 
-/* ----------------------------------------------- */
+    .hero {
+        padding: 80px 0; /* Decrease hero section padding for mobile */
+    }
+
+    .hero h1 {
+        font-size: 32px; /* Smaller title */
+    }
+
+    .hero p {
+        font-size: 16px; /* Smaller paragraph */
+    }
+
+    .hero .btn {
+        padding: 10px 15px; /* Smaller button */
+    }
+
+    .project-section,
+    .event-card,
+    .review {
+        flex-direction: column; /* Stack items vertically */
+        margin: 20px 0; /* Adjust margin */
+    }
+
+    .project-image,
+    .event-card img {
+        width: 100%; /* Full width images */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Space below images */
+    }
+
+    .services-card {
+        width: 100%; /* Full width cards */
+    }
+
+    .reviews-slider {
+        flex-direction: column; /* Stack reviews vertically on small screens */
+    }
+
+    /* Adjust sections' padding for mobile */
+    .projects-section,
+    .about-me,
+    .services-section,
+    .reviews-section {
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    /* Ensure button and text sizes are suitable for touch interaction */
+    .btn, .btn-github {
+        padding: 15px 20px; /* Larger buttons for better accessibility */
+        font-size: 18px; /* Larger font size */
+    }
+}
 
 /* Services Section */
 .services-section {
@@ -219,13 +514,6 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.services-heading {
-    display: flex;
-    align-content: center;
-    max-width: 1000px;
-    width: 100%;
-}
-
 .services-card {
     background-color: white;
     border-radius: 8px;
@@ -234,11 +522,6 @@ a:hover {
     text-align: center;
     width: 30%;
     margin: 20px 0;
-}
-
-.services-image {
-    width: 100%;
-    height: auto;
 }
 
 .services-card h2 {
@@ -265,10 +548,7 @@ a:hover {
 
 .btn:hover {
     background-color: #0056b3;
-    color: white;
 }
-
-/* ----------------------------------------------- */
 
 /* Section Styles */
 .section {
@@ -292,141 +572,7 @@ a:hover {
     background-color: #ffffff;
 }
 
-/* Services Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.service-card {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 10px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* ----------------------------------------------- */
-
-/* Custom About Section */
-.custom-about-section {
-    padding: 40px;
-    background-color: #f9f9f9;
-}
-
-.custom-about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.custom-about-text {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.custom-about-text h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.custom-about-text h4 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.custom-about-text p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.custom-about-text .btn-secondary {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.custom-about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.custom-about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* ----------------------------------------------- */
-
-/* Testimonial Slider */
-/* Testimonial Section Styles */
-.testimonial-section {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .testimonial-container {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    height: 200px; /* Set a fixed height to keep container dimensions consistent */
-  }
-  
-  .testimonial {
-    display: none; /* Hide all testimonials by default */
-    position: absolute;
-    width: 100%;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for fade effect */
-    color: #333;
-  }
-  
-  .testimonial.active {
-    display: block; /* Show the active testimonial */
-    opacity: 1;
-  }
-  
-  .testimonial p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 15px;
-  }
-  
-  .testimonial h3 {
-    font-size: 20px;
-    margin: 10px 0 5px;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .testimonial h4 {
-    font-size: 16px;
-    color: #777;
-    font-style: italic;
-  }  
-
-/* ----------------------------------------------- */
-
+/* Strenure Section */
 .strenure-section {
     padding: 20px;
     background-color: #09233e; /* Background color for the thin strip */
@@ -444,10 +590,11 @@ a:hover {
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Space below the logo */
 }
+
 .company-logo:hover {
     transform: scale(1.1); /* Slightly increase the size to create a bulge effect */
-  }
-  
+}
+
 .company-description {
     font-size: 16px;
     margin-bottom: 20px; /* Space below the description */
@@ -467,43 +614,39 @@ a:hover {
     background-color: #e0e0e0; /* Light gray background on hover */
 }
 
-/*--------------------------------------------*/
-
+/* Footer */
 footer {
-    /* Footer styling */
     background: linear-gradient(to right, #ffffff, #ffffff);
     color: #fff;
     text-align: center;
     padding: 20px 0;
     margin-top: 0px;
     transition: all 0.3s ease;
-   }
-   
-   .footer-container {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 20px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-   }
-   
-   .footer-quick-contact {
-     color: #000101;
-     text-decoration: none;
-     font-weight: light;
-   }
-   
-   .footer-social-media {
-     display: flex;
-     gap: 15px;
-   }
-   
-   .social-icon {
-     width: 24px;
-     height: 24px;
-   }
-   
-   .social-icon:hover {
-     opacity: 0.8;
-   }
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-quick-contact {
+    color: #000101;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}

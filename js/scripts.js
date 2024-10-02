@@ -1,5 +1,3 @@
-//BootStrap
-
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
@@ -21,12 +19,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const slider = document.querySelector('.reviews-slider');
+slider.addEventListener('mouseover', () => {
+    slider.style.animationPlayState = 'paused';
+});
+slider.addEventListener('mouseout', () => {
+    slider.style.animationPlayState = 'running';
+});
 
+// JavaScript for form validation (Optional if using HTML5 validation)
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    // Example of additional form validation
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    if (email === '' || message === '') {
+        alert('Please fill in all required fields.');
+        event.preventDefault();
+    }
+});
 
 // JavaScript for Testimonial Slider
 const slides = document.querySelectorAll('.testimonial-slide');
-const prevButton = document.querySelector('.prev-btn');
-const nextButton = document.querySelector('.next-btn');
 let currentSlide = 0;
 
 // Function to show the slide
@@ -42,21 +56,35 @@ function showSlide(index) {
 // Show the initial slide
 showSlide(currentSlide);
 
-// JavaScript to handle testimonial rotation
+// Testimonial rotation
 document.addEventListener('DOMContentLoaded', function() {
     const testimonials = document.querySelectorAll('.testimonial');
     let currentIndex = 0;
-  
+
     function showNextTestimonial() {
-      testimonials[currentIndex].classList.remove('active'); // Hide current testimonial
-      currentIndex = (currentIndex + 1) % testimonials.length; // Move to next testimonial
-      testimonials[currentIndex].classList.add('active'); // Show next testimonial
+        testimonials[currentIndex].classList.remove('active'); // Hide current testimonial
+        currentIndex = (currentIndex + 1) % testimonials.length; // Move to next testimonial
+        testimonials[currentIndex].classList.add('active'); // Show next testimonial
     }
-  
+
     // Initial display setup
     testimonials[currentIndex].classList.add('active'); // Show the first testimonial
-  
+
     // Rotate testimonials every 5 seconds
     setInterval(showNextTestimonial, 5000);
-  });
-  
+});
+
+// reviews Slide
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    const slides = document.querySelectorAll('.review-card');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
+        const offset = -currentIndex * 100; // Move to the next slide
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
+    }
+
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+});

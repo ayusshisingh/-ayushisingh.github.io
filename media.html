@@ -4,74 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Published Books </title>
-    <link rel="stylesheet" href="css/media_styles.css">
+    <title>Published Books</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Navigation Bar Section -->
-<header>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo" class="logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="speaking.html">Speaking Engagements</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!-- Navigation Bar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo" class="logo">
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="speaking.html">Speaking Engagements</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End of Navigation Bar Section -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Innovating the Future with Python and Psychology</h1>
+        <p>Leading with Knowledge, Creating with Passion</p>
+        <a href="projects.html" class="btn">My Projects</a>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- Strenure Section -->
+    <section class="strenure-section">
+        <div class="strenure-content">
+            <img src="images/company-logo.png" alt="Company Logo" class="company-logo">
+            <p class="company-description">
+                At Strenure AI, we're committed to driving innovation through custom software solutions that help businesses thrive in the digital age.
+            </p>
+            <a href="https://www.strenure.com" class="btn-visit-website" target="_blank">Company Website</a>
         </div>
-    </nav>
-</header>
-<!-- End of Navigation Bar Section -->
+    </section>
+    <!-- End of Strenure Section -->
 
-<!-- Hero Section -->
-<section class="hero">
-    <h1> Innovating the Future with Python and Psychology </h1>
-    <p>Leading with Knowledge, Creating with Passion</p>
-    <a href="projects.html" class="btn">My Projects</a>
-</section>
-<!-- End of Hero Section -->
-
-<!-- Strenure Section -->
-<section class="strenure-section">
-    <div class="strenure-content">
-        <img src="images/company-logo.png" alt="Company Logo" class="company-logo">
-        <p class="company-description">
-            At Strenure AI, we're committed to driving innovation through custom software solutions that help businesses thrive in the digital age.        </p>
-        <a href="https://www.strenure.com" class="btn-visit-website" target="_blank">Company Website</a>
-    </div>
-</section>
-<!-- End of Strenure Section -->
-
-<!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-quick-contact">
-            <p> © 2024 Ayushi Singh. All Rights Reserved.</p>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-quick-contact">
+                <p>© 2024 Ayushi Singh. All Rights Reserved.</p>
+            </div>
+            <div class="footer-social-media">
+                <a href="https://www.facebook.com/authorayushisingh/" target="_blank">
+                    <img src="images/1.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://gist.github.com/ayusshisingh" target="_blank">
+                    <img src="images/2.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/the-ayushi-singh/" target="_blank">
+                    <img src="images/3.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/ayushisingh_official/" target="_blank">
+                    <img src="images/4.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.tiktok.com/@ayusshisingh?lang=en" target="_blank">
+                    <img src="images/5.png" alt="TikTok" class="social-icon">
+                </a>
+            </div>
         </div>
-        <div class="footer-social-media">
-            <a href="https://www.facebook.com/authorayushisingh/" target="_blank">
-                <img src="images/1.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://gist.github.com/ayusshisingh" target="_blank">
-                <img src="images/2.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://www.linkedin.com/in/the-ayushi-singh/" target="_blank">
-                <img src="images/3.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://www.instagram.com/ayushisingh_official/" target="_blank">
-                <img src="images/4.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://www.tiktok.com/@ayusshisingh?lang=en" target="_blank">
-                <img src="images/5.png" alt="Facebook" class="social-icon">
-            </a>
-        </div>
-    </div>
-</footer>
-<!-- End of Footer Section -->
+    </footer>
+    <!-- End of Footer Section -->
 
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
