@@ -21,10 +21,9 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Navigation Bar */
 /* Navbar Styles */
 .navbar {
-    background-color: #f8f9fa; /* Light background */
+    background-color: #ffffff; /* Light background */
     padding: 10px;
 }
 
@@ -42,7 +41,7 @@ a:hover {
 
 /* Navbar links styling */
 .navbar-nav .nav-link {
-    font-weight: bold;  /* Make text bold */
+    font-weight: light;  /* Make text bold */
     color: #000 !important; /* Set text color to black */
     font-size: 16px;
     padding: 10px;
