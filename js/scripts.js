@@ -88,3 +88,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(showNextSlide, 3000); // Change slide every 3 seconds
 });
+// Function to expand and display the image in full-size along with title
+function toggleExpand(index) {
+    const item = document.getElementById(`item${index}`);
+    const isExpanded = item.classList.contains('expanded');
+
+    // Close any currently expanded image before opening a new one
+    const expandedItems = document.querySelectorAll('.expanded');
+    expandedItems.forEach(expItem => {
+        expItem.classList.remove('expanded');
+    });
+
+    if (!isExpanded) {
+        item.classList.add('expanded');
+    }
+}
+
+// Function to close the expanded view
+function closeExpand(event, index) {
+    event.stopPropagation(); // Stop the event from triggering the toggleExpand
+    const item = document.getElementById(`item${index}`);
+    item.classList.remove('expanded');
+}

@@ -650,3 +650,116 @@ footer {
 .social-icon:hover {
     opacity: 0.8;
 }
+
+.gallery-container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row on desktop */
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Expanded view when an image is clicked */
+.expanded {
+    position: relative;
+    grid-column: span 4; /* Take up all columns in the row when expanded */
+    grid-row: span 2;
+    z-index: 1;
+}
+
+.expanded img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 8px;
+    transition: none;
+}
+
+.expanded h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Close button for expanded view */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    display: none;
+}
+
+.expanded .close-btn {
+    display: inline;
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row on tablets */
+    }
+
+    .expanded {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller devices */
+    }
+
+    .expanded {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 image per row on mobile */
+    }
+
+    .expanded {
+        grid-column: span 1;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .gallery-item h3 {
+        font-size: 16px;
+    }
+}
