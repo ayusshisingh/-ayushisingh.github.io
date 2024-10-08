@@ -45,7 +45,6 @@ a:hover {
     font-weight: light;  
     color: #000 !important; /* Set text color to black */
     font-size: 16px;
-    padding: 10px;
     transition: color 0.3s ease-in-out;
 }
 
