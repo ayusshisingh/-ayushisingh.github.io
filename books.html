@@ -148,42 +148,14 @@
 <!----End of Image Slider Section-->
 
 <!----End of Image Section-->
-<!-- Strenure Section -->
-<section class="strenure-section">
-    <div class="strenure-content">
-        <img src="images/company-logo.png" alt="Company Logo" class="company-logo">
-        <p class="company-description">
-            At Strenure AI, we're committed to driving innovation through custom software solutions that help businesses thrive in the digital age.        </p>
-        <a href="https://www.strenure.com" class="btn-visit-website" target="_blank">Company Website</a>
-    </div>
-</section>
-<!-- End of Strenure Section -->
-
-<!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-quick-contact">
-            <p> © 2024 Ayushi Singh. All Rights Reserved.</p>
-        </div>
-        <div class="footer-social-media">
-            <a href="https://www.facebook.com/authorayushisingh/" target="_blank">
-                <img src="images/1.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://gist.github.com/ayusshisingh" target="_blank">
-                <img src="images/2.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://www.linkedin.com/in/the-ayushi-singh/" target="_blank">
-                <img src="images/3.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://www.instagram.com/ayushisingh_official/" target="_blank">
-                <img src="images/4.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://www.tiktok.com/@ayusshisingh?lang=en" target="_blank">
-                <img src="images/5.png" alt="Facebook" class="social-icon">
-            </a>
-        </div>
-    </div>
-</footer>
+<div id="footer-placeholder"></div>
+<script>
+    fetch('components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
 <!-- End of Footer Section -->
 
 </body>
