@@ -8,32 +8,13 @@
     <title>Ayushi Singh</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="/js/scripts.js" defer></script>
+    <script src="js/include.js"></script> 
 </head>
 
 <body>
 
 <!-- Navigation Bar -->
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="speaking.html">Speaking Engagements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
-                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+<div include-html="components/navbar.html"></div>
 
 <!-- Hero Section -->
 <section class="hero text-center py-5">
