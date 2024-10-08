@@ -41,7 +41,7 @@ a:hover {
 
 /* Navbar links styling */
 .navbar-nav .nav-link {
-    font-weight: light;  /* Make text bold */
+    font-weight: light;  
     color: #000 !important; /* Set text color to black */
     font-size: 16px;
     padding: 10px;
@@ -416,48 +416,6 @@ button:hover {
     color: #555;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    /* Adjust Navbar for Mobile */
-    .navbar ul {
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 60px; /* Below the navbar */
-        left: 0;
-        right: 0;
-        background-color: #ffffff; /* Match navbar background */
-        display: none; /* Hidden by default */
-    }
-
-    .navbar ul.show {
-        display: flex; /* Show menu when toggled */
-    }
-
-    .navbar .logo {
-        width: 120px; /* Smaller logo on mobile */
-    }
-
-    .navbar .container {
-        flex-direction: column; /* Stack items vertically */
-        padding: 10px 20px; /* Padding for mobile */
-    }
-
-    .about-me {
-        flex-direction: column; /* Stack image and text */
-    }
-
-    .about-me-image {
-        padding-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .about-me-text h2,
-    .about-me-text h4 {
-        text-align: center;
-    }
-
     .hero {
         padding: 80px 0; /* Decrease hero section padding for mobile */
     }
@@ -509,7 +467,7 @@ button:hover {
         padding: 15px 20px; /* Larger buttons for better accessibility */
         font-size: 18px; /* Larger font size */
     }
-}
+
 
 /* Services Section */
 .services-section {
