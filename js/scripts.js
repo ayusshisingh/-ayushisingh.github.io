@@ -3,110 +3,98 @@ document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
 
+    // Toggle active class for mobile navigation
     navToggle.addEventListener('click', function() {
         navLinks.classList.toggle('active');
     });
 });
 
-// Smooth Scrolling
+// Smooth Scrolling for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth' // Smooth scrolling effect
         });
     });
 });
 
+// Reviews Slider Mouse Events
 const slider = document.querySelector('.reviews-slider');
 slider.addEventListener('mouseover', () => {
-    slider.style.animationPlayState = 'paused';
+    slider.style.animationPlayState = 'paused'; // Pause animation on mouse over
 });
 slider.addEventListener('mouseout', () => {
-    slider.style.animationPlayState = 'running';
+    slider.style.animationPlayState = 'running'; // Resume animation on mouse out
 });
 
-// JavaScript for form validation (Optional if using HTML5 validation)
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    // Example of additional form validation
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
+// Contact Form Validation
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
+    // Check if required fields are filled
     if (email === '' || message === '') {
         alert('Please fill in all required fields.');
-        event.preventDefault();
+        event.preventDefault(); // Prevent form submission if validation fails
     }
 });
 
-// JavaScript for Testimonial Slider
-const slides = document.querySelectorAll('.testimonial-slide');
-let currentSlide = 0;
+// Testimonial Slider
+const testimonials = document.querySelectorAll('.testimonial');
+let currentIndex = 0;
 
-// Function to show the slide
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-            slide.classList.add('active');
-        }
+// Function to show the current testimonial
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.classList.toggle('active', i === index); // Toggle active class
     });
 }
 
-// Show the initial slide
-showSlide(currentSlide);
+// Show the initial testimonial
+showTestimonial(currentIndex);
 
-// Testimonial rotation
-document.addEventListener('DOMContentLoaded', function() {
-    const testimonials = document.querySelectorAll('.testimonial');
-    let currentIndex = 0;
+// Rotate testimonials every 5 seconds
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % testimonials.length; // Move to next testimonial
+    showTestimonial(currentIndex);
+}, 5000);
 
-    function showNextTestimonial() {
-        testimonials[currentIndex].classList.remove('active'); // Hide current testimonial
-        currentIndex = (currentIndex + 1) % testimonials.length; // Move to next testimonial
-        testimonials[currentIndex].classList.add('active'); // Show next testimonial
-    }
-
-    // Initial display setup
-    testimonials[currentIndex].classList.add('active'); // Show the first testimonial
-
-    // Rotate testimonials every 5 seconds
-    setInterval(showNextTestimonial, 5000);
-});
-
-// reviews Slide
+// Reviews Slide
 document.addEventListener('DOMContentLoaded', function() {
     const sliderWrapper = document.querySelector('.slider-wrapper');
     const slides = document.querySelectorAll('.review-card');
-    let currentIndex = 0;
+    let currentSlideIndex = 0;
 
+    // Function to show the next slide
     function showNextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
-        const offset = -currentIndex * 100; // Move to the next slide
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length; // Loop to the first slide
+        const offset = -currentSlideIndex * 100; // Calculate offset for translation
+        sliderWrapper.style.transform = `translateX(${offset}%)`; // Move to the next slide
     }
 
     setInterval(showNextSlide, 3000); // Change slide every 3 seconds
 });
-// Function to expand and display the image in full-size along with title
+
+// Expand Image Functionality
 function toggleExpand(index) {
     const item = document.getElementById(`item${index}`);
     const isExpanded = item.classList.contains('expanded');
 
-    // Close any currently expanded image before opening a new one
-    const expandedItems = document.querySelectorAll('.expanded');
-    expandedItems.forEach(expItem => {
+    // Close any currently expanded item
+    document.querySelectorAll('.expanded').forEach(expItem => {
         expItem.classList.remove('expanded');
     });
 
+    // Expand the clicked item if it is not already expanded
     if (!isExpanded) {
         item.classList.add('expanded');
     }
 }
 
-// Function to close the expanded view
+// Function to close the expanded view when clicking on it
 function closeExpand(event, index) {
-    event.stopPropagation(); // Stop the event from triggering the toggleExpand
+    event.stopPropagation(); // Prevent event from bubbling up to toggleExpand
     const item = document.getElementById(`item${index}`);
-    item.classList.remove('expanded');
+    item.classList.remove('expanded'); // Close the expanded item
 }
