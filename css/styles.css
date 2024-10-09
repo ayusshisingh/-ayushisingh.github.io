@@ -60,7 +60,7 @@ a:hover {
         width: 100%;
     }
     .navbar-nav .nav-item {
-        margin-bottom: 10x;
+        margin-bottom: 10px;
     }
     .navbar-nav .nav-link {
         font-size: 18px;  /* Larger text on mobile */
@@ -84,20 +84,17 @@ a:hover {
     overflow: hidden;
     margin-top: 0; /* Ensure no gap at the top */
     padding-top: 0; /* Remove any padding at the top of hero */
-  }
-  
-  .hero-image {
+}
+.hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the image covers the whole hero section */
     transition: filter 0.3s ease;
-  }
-  
-  .hero:hover .hero-image {
+}
+.hero:hover .hero-image {
     filter: brightness(40%); /* Darken on hover */
-  }
-  
-  .hero-content {
+}
+.hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -105,9 +102,8 @@ a:hover {
     text-align: center;
     color: white;
     z-index: 1;
-  }
-  
-  .cta-button {
+}
+.cta-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #271bb5; /* Change this to your preferred button color */
@@ -115,12 +111,10 @@ a:hover {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
+}
+.cta-button:hover {
     background-color: #080416;
-  }
-  
+}
 
 /* Contact Form Section Styling */
 #contact {
@@ -128,28 +122,24 @@ a:hover {
     padding: 50px 0;
     max-width: 600px;
     margin: 40px auto; /* Increased margin for better spacing */
-    padding:10px;
+    padding: 10px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
 h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #333333;
 }
-
 form {
     display: flex;
     flex-direction: column;
 }
-
 label {
     margin-bottom: 5px;
     color: #666666;
 }
-
 input,
 textarea {
     margin-bottom: 15px;
@@ -157,7 +147,6 @@ textarea {
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
-
 button {
     padding: 12px;
     border: none;
@@ -168,7 +157,6 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 button:hover {
     background-color: #0056b3;
 }
@@ -178,20 +166,17 @@ button:hover {
     padding: 40px 0; /* Increased padding for speaking engagements section */
     background-color: #f9f9f9;
 }
-
 #speaking-engagements h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
-
 .event-grid {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-
 .event-card {
     background-color: #fff;
     border-radius: 8px;
@@ -201,27 +186,22 @@ button:hover {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
 .event-card img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 .event-content {
     padding: 15px;
 }
-
 .event-content h2 {
     margin-top: 0;
     color: #007bff;
 }
-
 .event-content p {
     color: #666;
     font-size: 14px;
 }
-
 .video-embed iframe {
     width: 100%;
     height: 200px;
@@ -237,21 +217,18 @@ button:hover {
     background-color: #f4f4f4;
     padding: 20px 0;
 }
-
 .reviews-slider {
     display: flex;
     flex-direction: row;
     width: 100%;
     animation: slide 10s linear infinite;
 }
-
 .review-slide {
     display: flex;
     justify-content: space-around;
     width: 100%;
     flex-shrink: 0;
 }
-
 .review {
     background-color: white;
     padding: 20px;
@@ -260,18 +237,15 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .review p {
     font-size: 16px;
     color: #666;
 }
-
 .review h4 {
     margin-top: 10px;
     font-weight: bold;
     color: #333;
 }
-
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -286,14 +260,12 @@ button:hover {
     padding: 40px;
     background-color: #f9f9f9; /* Light background color */
 }
-
 .section-heading {
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
     color: #333; /* Darker text color */
 }
-
 .project-section {
     display: flex;
     align-items: center;
@@ -303,7 +275,6 @@ button:hover {
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
-
 .project-image {
     width: 150px;
     height: 150px;
@@ -311,29 +282,24 @@ button:hover {
     border-radius: 8px; /* Rounded corners for the image */
     margin-right: 20px; /* Space between image and text */
 }
-
 .project-info {
     flex: 1; /* Allow text to take up remaining space */
 }
-
 .project-title {
     font-size: 24px;
     margin-bottom: 5px;
     color: #0d2d50; /* Highlight color */
 }
-
 .project-more-info {
     font-size: 16px;
     color: #666; /* Lighter text color for description */
     margin-bottom: 20px;
 }
-
 .project-description {
     font-size: 16px;
     color: #666; /* Lighter text color for description */
     margin-bottom: 20px;
 }
-
 .btn-github {
     background-color: #0d2d50; /* Button background color */
     color: #fff; /* Button text color */
@@ -343,7 +309,6 @@ button:hover {
     font-weight: bold; /* Bold text for emphasis */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
-
 .btn-github:hover {
     background-color: #0056b3; /* Darker button color on hover */
     color: white;
@@ -354,399 +319,48 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    padding: 20px; /* Increased padding */
+    background-color: #fff; /* White background */
+    margin: 20px; /* Margin for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.about-me img {
+    width: 200px; /* Fixed width for profile picture */
+    height: 200px; /* Fixed height for profile picture */
+    border-radius: 50%; /* Circular profile picture */
+    margin-right: 20px; /* Space between image and text */
+}
+.about-me h2 {
+    color: #333; /* Darker text color */
+}
+.about-me p {
+    color: #666; /* Lighter text color */
 }
 
-.about-me-content {
-    display: flex;
-    align-items: center;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.about-me-image {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.about-me-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about-me-text {
-    flex: 2;
-}
-
-.about-me-text h2 {
-    margin: 0;
-    font-size: 32px;
-    color: #333;
-}
-
-.about-me-text h4 {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #777;
-}
-
-.about-me-text p {
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-}
-
-    .hero {
-        padding: 80px 0; /* Decrease hero section padding for mobile */
-    }
-
-    .hero h1 {
-        font-size: 32px; /* Smaller title */
-    }
-
-    .hero p {
-        font-size: 16px; /* Smaller paragraph */
-    }
-
-    .hero .btn {
-        padding: 10px 15px; /* Smaller button */
-    }
-
-    .project-section,
-    .event-card,
-    .review {
-        flex-direction: column; /* Stack items vertically */
-        margin: 20px 0; /* Adjust margin */
-    }
-
-    .project-image,
-    .event-card img {
-        width: 100%; /* Full width images */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 10px; /* Space below images */
-    }
-
-    .services-card {
-        width: 100%; /* Full width cards */
-    }
-
-    .reviews-slider {
-        flex-direction: column; /* Stack reviews vertically on small screens */
-    }
-
-    /* Adjust sections' padding for mobile */
-    .projects-section,
-    .about-me,
-    .services-section,
-    .reviews-section {
-        padding: 20px; /* Reduced padding for mobile */
-    }
-
-    /* Ensure button and text sizes are suitable for touch interaction */
-    .btn, .btn-github {
-        padding: 15px 20px; /* Larger buttons for better accessibility */
-        font-size: 18px; /* Larger font size */
-    }
-
-
-/* Services Section */
-.services-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 40px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.services-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    width: 30%;
-    margin: 20px 0;
-}
-
-.services-card h2 {
-    margin: 10px 0;
-    color: #333;
-}
-
-.services-card p {
-    padding: 0 15px;
-    color: #666;
-}
-
-/* Button Styles */
-.btn {
-    background-color: #0d2d50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin: 15px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Section Styles */
-.section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #000000;
-}
-
-.section p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.section.bg-light {
-    background-color: #ffffff;
-}
-
-/* Strenure Section */
-.strenure-section {
-    padding: 20px;
-    background-color: #09233e; /* Background color for the thin strip */
-    color: #fff; /* White text color */
-    text-align: center; /* Center align the text and content */
-}
-
-.strenure-content {
-    max-width: 1200px; /* Maximum width of the content */
-    margin: 0 auto; /* Center the content horizontally */
-}
-
-.company-logo {
-    max-width: 150px; /* Set a maximum width for the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Space below the logo */
-}
-
-.company-logo:hover {
-    transform: scale(1.1); /* Slightly increase the size to create a bulge effect */
-}
-
-.company-description {
-    font-size: 16px;
-    margin-bottom: 20px; /* Space below the description */
-}
-
-.btn-visit-website {
-    background-color: #ffffff; /* White background color for the button */
-    color: #0d2d50; /* Text color matching the section background */
-    padding: 10px 20px; /* Padding for the button */
-    text-decoration: none; /* Remove underline from the link */
-    border-radius: 5px; /* Rounded corners for the button */
-    font-weight: bold; /* Bold text for emphasis */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.btn-visit-website:hover {
-    background-color: #e0e0e0; /* Light gray background on hover */
-}
-
-/* Footer */
+/* Footer Section */
 footer {
-    background: linear-gradient(to right, #ffffff, #ffffff);
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 0px;
-    transition: all 0.3s ease;
+    background-color: #272b30; /* Dark background color */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Padding for spacing */
+}
+footer a {
+    color: #ffffff; /* White links */
+    text-decoration: underline; /* Underlined links */
+}
+footer a:hover {
+    color: #2c3e50; /* Change link color on hover */
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-quick-contact {
-    color: #000101;
-}
-
-.footer-social-media {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icon {
-    width: 24px;
-    height: 24px;
-}
-
-.social-icon:hover {
-    opacity: 0.8;
-}
-
-.gallery-container {
-    text-align: center;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images per row on desktop */
-    gap: 10px;
-}
-
-.gallery-item {
-    position: relative;
-    cursor: pointer;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-}
-
-.gallery-item h3 {
-    font-size: 18px;
-    margin-top: 5px;
-}
-
-/* Expanded view when an image is clicked */
-.expanded {
-    position: relative;
-    grid-column: span 4; /* Take up all columns in the row when expanded */
-    grid-row: span 2;
-    z-index: 1;
-}
-
-.expanded img {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    border-radius: 8px;
-    transition: none;
-}
-
-.expanded h3 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-/* Close button for expanded view */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #000;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 3px;
-    display: none;
-}
-
-.expanded .close-btn {
-    display: inline;
-}
-
-/* Responsive Layout for Mobile */
-@media (max-width: 1024px) {
-    .gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 images per row on tablets */
-    }
-
-    .expanded {
-        grid-column: span 3;
-    }
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller devices */
-    }
-
-    .expanded {
-        grid-column: span 2;
+    .event-card {
+        width: calc(50% - 10px); /* Adjust width for mobile */
     }
 }
-
-@media (max-width: 480px) {
-    .gallery {
-        grid-template-columns: 1fr; /* 1 image per row on mobile */
+@media (max-width: 576px) {
+    .event-card {
+        width: 100%; /* Full width on smaller screens */
     }
-
-    .expanded {
-        grid-column: span 1;
-    }
-    h2 {
-        font-size: 18px;
-    }
-    .gallery-item h3 {
-        font-size: 16px;
-    }
-}
-
-/* Client Logo Slider Styles */
-#client-logos {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-}
-
-#client-logos h2 {
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.logo-slide {
-    max-height: 100px;
-    padding: 10px;
-    opacity: 0.8;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.logo-slide:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-/* Adjust carousel controls */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #007bff;
-    border-radius: 50%;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
 }
