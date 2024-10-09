@@ -3,6 +3,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     color: #333;
     line-height: 1.6;
     background-color: #ffffff;
@@ -59,7 +60,7 @@ a:hover {
         width: 100%;
     }
     .navbar-nav .nav-item {
-        margin-bottom: 10px;
+        margin-bottom: 10x;
     }
     .navbar-nav .nav-link {
         font-size: 18px;  /* Larger text on mobile */
@@ -125,7 +126,7 @@ a:hover {
     padding: 50px 0;
     max-width: 600px;
     margin: 40px auto; /* Increased margin for better spacing */
-    padding: 20px;
+    padding:10px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -159,7 +160,7 @@ button {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #1b1b1c;
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
