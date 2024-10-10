@@ -23,58 +23,74 @@ a:hover {
 }
 
 /* Navbar Styles */
-.navbar {
-    background-color: #ffffff; /* Light background */
-    margin-bottom: 0;
-    padding-bottom: 0;
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar .logo {
-    height: 40px; /* Adjust logo height */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    padding: 1rem 2rem;
+}
+
+.navbar-brand img.logo {
+    max-height: 50px; /* Adjust logo size */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem; /* Space between nav items */
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Bootstrap primary color */
 }
 
 .navbar-toggler {
-    border-color: #000; /* Black border for toggle button */
+    border: none; /* Hide border on mobile toggle button */
+    outline: none;
 }
 
-.navbar-toggler-icon {
-    background-color: #000; /* Black toggler icon */
-}
-
-/* Navbar links styling */
-.navbar-nav .nav-link {
-    font-weight: light;  
-    color: #000 !important; /* Set text color to black */
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #0856aa !important; /* Change color on hover */
-}
-
+/* Mobile Styling */
 @media (max-width: 992px) {
-    /* Adjust for mobile screens */
     .navbar-nav {
         text-align: center;
-        width: 100%;
     }
+
     .navbar-nav .nav-item {
-        margin-bottom: 10px;
+        margin-left: 0;
+        margin-bottom: 1rem;
     }
+
     .navbar-nav .nav-link {
-        font-size: 18px;  /* Larger text on mobile */
+        font-size: 1.2rem; /* Larger text on mobile */
     }
 }
 
-@media (max-width: 576px) {
-    .navbar-brand img {
-        height: 30px;  /* Smaller logo on mobile */
-    }
-    .navbar-nav .nav-link {
-        font-size: 16px; /* Slightly smaller font on smaller screens */
-    }
+/* Sticky Navbar Effect */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
+
 
 /* Hero/Banner Section */
 .hero {
