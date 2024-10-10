@@ -41,7 +41,7 @@ body {
 
 .navbar-brand img.logo {
     width: 150px;
-    margin-bottom: 20px;/* Adjust logo size */
+    margin-bottom: 0px;/* Adjust logo size */
 }
 
 .navbar-nav .nav-item {
