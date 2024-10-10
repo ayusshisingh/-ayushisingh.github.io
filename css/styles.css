@@ -361,38 +361,47 @@ button:hover {
 }
 
 /* Strenure Section */
+/* Strenure Section Styling */
 .strenure-section {
-    background-color: #000000;
-    padding: 40px 20px;
-    text-align: center;
+    background-color: #000000; /* Black background */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+    animation: backgroundAnimation 10s infinite alternate; /* Animated background */
+}
+
+/* Keyframes for background animation */
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #000000; /* Start with black */
+    }
+    50% {
+        background-color: #1c1c1c; /* Dark gray at half */
+    }
+    100% {
+        background-color: #000000; /* Return to black */
+    }
 }
 
 .strenure-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center content */
 }
 
 .company-logo {
-    width: 150px;
-    margin-bottom: 20px;
+    width: 150px; /* Logo width */
+    margin-bottom: 20px; /* Space below logo */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+/* Hover effect for logo */
+.company-logo:hover {
+    transform: scale(1.1); /* Slight bulge effect on hover */
 }
 
 .company-description {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.btn-visit-website {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-.btn-visit-website:hover {
-    transform: scale(1.1);
+    font-size: 1.2rem; /* Font size for description */
+    margin-bottom: 20px; /* Space below description */
+    color: #ffffff; /* White text for readability */
 }
 
 /* Footer Section */
