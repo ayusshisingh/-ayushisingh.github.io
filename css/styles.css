@@ -40,7 +40,7 @@ body {
 }
 
 .navbar-brand img.logo {
-    max-height: 50%; /* Adjust logo size */
+    max-height: 20%; /* Adjust logo size */
 }
 
 .navbar-nav .nav-item {
