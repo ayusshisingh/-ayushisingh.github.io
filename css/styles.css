@@ -23,7 +23,6 @@ a:hover {
 }
 
 /* Navbar Styles */
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -36,12 +35,12 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: #f8f9fa; /* Light background */
+    background-color: #ffffff; /* Light background */
     padding: 1rem 2rem;
 }
 
 .navbar-brand img.logo {
-    max-height: 50px; /* Adjust logo size */
+    max-height: 100px; /* Adjust logo size */
 }
 
 .navbar-nav .nav-item {
