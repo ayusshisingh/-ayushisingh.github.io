@@ -369,7 +369,7 @@ button:hover {
 
 /* Strenure Section */
 .strenure-section {
-    background-color: #f4f4f4;
+    background-color: #16087f;
     padding: 40px 20px;
     text-align: center;
 }
@@ -390,8 +390,8 @@ button:hover {
 }
 
 .btn-visit-website {
-    background-color: #007BFF;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
@@ -404,7 +404,7 @@ button:hover {
 
 /* Footer Section */
 footer {
-    background-color: #272b30;
+    background-color: #ffffff;
     color: #ffffff;
     padding: 30px 20px;
     display: flex;
