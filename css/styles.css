@@ -22,7 +22,7 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Navbar Styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -36,12 +36,16 @@ body {
 /* Navbar Styling */
 .navbar {
     background-color: #f8f9fa; /* Light background */
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; /* Padding for spacing */
+    position: sticky; /* Stick to top */
+    top: 0; /* Position at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it sits above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 .navbar-brand img.logo {
-    width: 150px;
-    margin-bottom: 0px;/* Adjust logo size */
+    width: 150px; /* Adjust logo size */
 }
 
 .navbar-nav .nav-item {
@@ -49,46 +53,37 @@ body {
 }
 
 .nav-link {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
+    font-size: 1rem; /* Default font size */
+    font-weight: 600; /* Bold font */
+    color: #333; /* Dark text color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .nav-link:hover {
-    color: #007bff; /* Bootstrap primary color */
+    color: #007bff; /* Change color on hover */
 }
 
 .navbar-toggler {
     border: none; /* Hide border on mobile toggle button */
-    outline: none;
+    outline: none; /* Remove outline */
 }
 
 /* Mobile Styling */
 @media (max-width: 992px) {
     .navbar-nav {
-        text-align: center;
+        text-align: center; /* Center text on mobile */
     }
 
     .navbar-nav .nav-item {
-        margin-left: 0;
-        margin-bottom: 1rem;
+        margin-left: 0; /* No left margin on mobile */
+        margin-bottom: 1rem; /* Space below items on mobile */
     }
 
     .navbar-nav .nav-link {
         font-size: 1.2rem; /* Larger text on mobile */
     }
-}
-
-/* Sticky Navbar Effect */
-.navbar {
-    position: sticky;
-    top: 0;
-    width: 70%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 
