@@ -85,8 +85,6 @@ body {
         font-size: 1.2rem; /* Larger text on mobile */
     }
 }
-
-
 /* Hero/Banner Section */
 .hero {
     position: relative;
@@ -400,7 +398,7 @@ button:hover {
 /* Footer Section */
 footer {
     background-color: #ffffff;
-    color: #ffffff;
+    color: #000000;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
