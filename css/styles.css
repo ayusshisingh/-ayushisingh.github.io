@@ -86,7 +86,7 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 70%;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
@@ -418,7 +418,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -428,7 +428,7 @@ footer {
 }
 
 .footer-left a {
-    color: #007BFF;
+    color: #030304;
     text-decoration: underline;
 }
 
