@@ -353,20 +353,6 @@ button:hover {
     color: #666; /* Lighter text color */
 }
 
-/* Footer Section */
-footer {
-    background-color: #272b30; /* Dark background color */
-    color: #ffffff; /* White text color */
-    text-align: center; /* Centered text */
-    padding: 20px 0; /* Padding for spacing */
-}
-footer a {
-    color: #ffffff; /* White links */
-    text-decoration: underline; /* Underlined links */
-}
-footer a:hover {
-    color: #2c3e50; /* Change link color on hover */
-}
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -377,5 +363,72 @@ footer a:hover {
 @media (max-width: 576px) {
     .event-card {
         width: 100%; /* Full width on smaller screens */
+    }
+}
+/* Footer Section */
+footer {
+    background-color: #272b30; /* Dark background */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Spacing */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    padding: 10px 20px;
+}
+
+.footer-quick-contact p {
+    margin: 10px 0;
+    font-size: 14px; /* Slightly smaller font */
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add spacing between icons */
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none; /* Remove underline */
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #2c3e50; /* Darker color on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+    
+    .footer-social-media {
+        margin-top: 15px; /* Add spacing on mobile */
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px; /* Slightly smaller icons on mobile */
+    }
+
+    .footer-quick-contact p {
+        font-size: 13px; /* Smaller text on mobile */
     }
 }
