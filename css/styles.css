@@ -124,18 +124,22 @@ a:hover {
 /* Services Section */
 .services-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 40px 20px;
     background-color: #fff;
 }
 
 .services-card {
+    flex: 1 1 30%;
+    margin: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    max-width: 300px;  /* Controls the maximum size of the cards */
 }
 
 .services-card:hover {
@@ -143,30 +147,58 @@ a:hover {
 }
 
 .services-card img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .services-card h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .services-card p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 15px;
 }
 
 .services-card .btn {
     background-color: #333;
     color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
 }
 
 .services-card .btn:hover {
     background-color: #555;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-section {
+        justify-content: center;
+    }
+
+    .services-card {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+
+    .services-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .services-card h2 {
+        font-size: 18px;
+    }
+
+    .services-card p {
+        font-size: 13px;
+    }
+}
+
 
 /* Client Logos Section */
 #client-logos .carousel-inner img {
