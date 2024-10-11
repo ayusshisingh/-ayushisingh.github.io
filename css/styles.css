@@ -24,133 +24,139 @@ a:hover {
 /* About Me Section */
 .about-me {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-start;
     padding: 40px 20px;
     background-color: #f9f9f9;
-    text-align: left;
 }
 
-.about-me-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.about-me-image {
     flex: 1;
-    padding-left: 20px; /* Add space between image and content */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .about-me img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
     margin-bottom: 20px;
-    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.about-me-text {
+    flex: 2;
+    padding: 0 20px;
+    animation: slideIn 1s ease-in-out;
 }
 
 .about-me h2 {
-    margin-bottom: 15px;
-    font-size: 28px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .about-me p {
-    margin-bottom: 15px;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.about-me .btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-}
-
-.about-me .btn:hover {
-    background-color: #555;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .about-me {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-me-content {
-        padding-left: 0;
-        align-items: center;
-    }
-
-    .about-me img {
-        margin-bottom: 20px;
-    }
+.btn-group .btn {
+    margin-right: 10px;
 }
 
 /* Services Section */
 .services-section {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     padding: 40px 20px;
     background-color: #fff;
 }
 
 .services-card {
-    flex-basis: 30%;
-    margin-bottom: 20px;
+    text-align: center;
     padding: 20px;
     background-color: #f9f9f9;
-    text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.services-card:hover {
+    transform: translateY(-10px);
 }
 
 .services-card img {
     width: 100px;
-    margin-bottom: 15px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 .services-card h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-/* Client Logo Slider */
-#client-logos .carousel-item {
-    display: flex;
-    justify-content: space-around;
+.services-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-#client-logos .img-fluid {
+.services-card .btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.services-card .btn:hover {
+    background-color: #555;
+}
+
+/* Client Logos Section */
+#client-logos .carousel-inner img {
     max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 10px;
 }
 
-/* Media Queries */
+#client-logos .carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-50px); }
+    to { transform: translateX(0); }
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .about-me, .services-section {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-text {
+        padding: 20px 0;
+    }
+
+    .services-section {
         flex-direction: column;
         align-items: center;
     }
 
     .services-card {
-        flex-basis: 100%;
-    }
-
-    #client-logos .carousel-item {
-        flex-direction: column;
-    }
-
-    .about-me img {
-        width: 150px;
-        height: 150px;
+        width: 80%;
+        margin-bottom: 20px;
     }
 }
-
-
 /* Navbar Styling */
 .navbar {
     background-color: #f8f9fa; /* Light background */
