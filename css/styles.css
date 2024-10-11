@@ -25,7 +25,7 @@ a:hover {
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: flex-start;
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: left;
@@ -34,8 +34,9 @@ a:hover {
 .about-me-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
+    justify-content: center;
+    flex: 1;
+    padding-left: 20px; /* Add space between image and content */
 }
 
 .about-me img {
@@ -43,11 +44,51 @@ a:hover {
     height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
-    align-items: right;
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
-.about-me h2, .about-me p {
-    margin: 0 0 15px;
+.about-me h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.about-me p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-me .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-me .btn:hover {
+    background-color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me-content {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .about-me img {
+        margin-bottom: 20px;
+    }
 }
 
 /* Services Section */
