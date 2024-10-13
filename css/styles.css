@@ -823,4 +823,118 @@ footer {
       height: 100px;
     }
   }
-  
+  /* Reviews Section */
+.reviews-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.reviews-slider {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.review-slide {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+    animation: slide 20s infinite linear;
+}
+
+.review {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+.review p {
+    font-size: 1rem;
+}
+
+.review h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Books Section */
+.books-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.book-card {
+    width: 30%;
+    background-color: #fff;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.book-card p {
+    font-size: 1rem;
+}
+
+.book-card .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.book-card .btn:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .books-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-card {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn {
+        padding: 8px 16px;
+    }
+}
