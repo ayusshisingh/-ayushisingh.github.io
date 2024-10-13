@@ -43,13 +43,45 @@
     </div>
 
 
-    
-    <!-- Modal for full-size image -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImg" src="" alt="">
-        <h3 id="modalTitle"></h3>
+   <!-- Content and Image Stack Section -->
+<section class="content-image-section">
+    <div class="content">
+        <h2>Your Album Title</h2>
+        <p>This section can include a description or details about the album. You can explain what the images represent, your experiences, or any other relevant information.</p>
     </div>
+
+    <div class="image-stack">
+        <!-- Thumbnails of images -->
+        <img src="images/image1-thumb.jpg" alt="Thumbnail 1" class="thumbnail" onclick="openModal(0)">
+        <img src="images/image2-thumb.jpg" alt="Thumbnail 2" class="thumbnail" onclick="openModal(1)">
+        <img src="images/image3-thumb.jpg" alt="Thumbnail 3" class="thumbnail" onclick="openModal(2)">
+        <img src="images/image4-thumb.jpg" alt="Thumbnail 4" class="thumbnail" onclick="openModal(3)">
+    </div>
+</section>
+
+<!-- Modal for image slider -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="modal-slides">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="modal-slides">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="modal-slides">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <div class="modal-slides">
+            <img src="images/image4.jpg" alt="Image 4">
+        </div>
+
+        <!-- Previous and Next controls -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+</div>
+
 
     <!-- Footer Section -->
     <div id="footer-placeholder"></div>
@@ -63,10 +95,5 @@
     
     <!-- End of Footer Section -->
 
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        }
-    </script>
 </body>
 </html>

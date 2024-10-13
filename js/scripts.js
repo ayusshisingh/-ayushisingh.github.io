@@ -112,3 +112,41 @@ function openLightbox(imgElement) {
     document.getElementById('lightbox').style.display = 'none';
   }
   
+
+  // Open modal and show the selected image
+function openModal(index) {
+    document.getElementById("imageModal").style.display = "block";
+    currentSlide(index + 1);
+}
+
+// Close modal
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+let slideIndex = 1;
+
+// Show specific slide
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+// Show next/previous slide
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+// Function to display the correct slide
+function showSlides(n) {
+    let slides = document.getElementsByClassName("modal-slides");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
