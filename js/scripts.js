@@ -98,3 +98,17 @@ function closeExpand(event, index) {
     const item = document.getElementById(`item${index}`);
     item.classList.remove('expanded'); // Close the expanded item
 }
+// Open Lightbox
+function openLightbox(imgElement) {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    
+    lightbox.style.display = 'flex';
+    lightboxImg.src = imgElement.src;
+  }
+  
+  // Close Lightbox
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+  
