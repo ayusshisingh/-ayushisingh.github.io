@@ -151,39 +151,38 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
 }
 document.querySelectorAll('.trophy').forEach(trophy => {
-    let isDragging = false;
-    let startX;
-    let rotation = 0;
-  
-    trophy.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      startX = e.pageX - rotation;
-    });
-  
-    window.addEventListener('mousemove', (e) => {
-      if (!isDragging) return;
-      rotation = e.pageX - startX;
-      trophy.style.transform = `rotateY(${rotation}deg)`;
-    });
-  
-    window.addEventListener('mouseup', () => {
-      isDragging = false;
-    });
-  
-    // For touch devices
-    trophy.addEventListener('touchstart', (e) => {
-      isDragging = true;
-      startX = e.touches[0].pageX - rotation;
-    });
-  
-    window.addEventListener('touchmove', (e) => {
-      if (!isDragging) return;
-      rotation = e.touches[0].pageX - startX;
-      trophy.style.transform = `rotateY(${rotation}deg)`;
-    });
-  
-    window.addEventListener('touchend', () => {
-      isDragging = false;
-    });
+  let isDragging = false;
+  let startX;
+  let rotation = 0;
+
+  trophy.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - rotation;
   });
-  
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    rotation = e.pageX - startX;
+    trophy.style.transform = `rotateY(${rotation}deg)`;
+  });
+
+  window.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  // For touch devices
+  trophy.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX - rotation;
+  });
+
+  window.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    rotation = e.touches[0].pageX - startX;
+    trophy.style.transform = `rotateY(${rotation}deg)`;
+  });
+
+  window.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+});
