@@ -121,26 +121,14 @@
 
 </section>
 <!----Images Slider-->
-<section class="instagram-slider">
-  <div class="slider-container">
-      <div class="slider">
-          <img src="images/HomePage Slider/1.jpg" data-full-src="images/HomePage Slider/1-large.jpg" alt="Photo 1" class="slider-image" onclick="openLightbox(this)">
-          <img src="images/HomePage Slider/2.jpg" data-full-src="images/HomePage Slider/2-large.jpg" alt="Photo 2" class="slider-image" onclick="openLightbox(this)">
-          <img src="images/HomePage Slider/3.jpg" data-full-src="images/HomePage Slider/3-large.jpg" alt="Photo 3" class="slider-image" onclick="openLightbox(this)">
-          <img src="images/HomePage Slider/4.jpg" data-full-src="images/HomePage Slider/4-large.jpg" alt="Photo 4" class="slider-image" onclick="openLightbox(this)">
-          <img src="images/HomePage Slider/5.jpg" data-full-src="images/HomePage Slider/5-large.jpg" alt="Photo 5" class="slider-image" onclick="openLightbox(this)">
-          <img src="images/HomePage Slider/6.jpg" data-full-src="images/HomePage Slider/6-large.jpg" alt="Photo 6" class="slider-image" onclick="openLightbox(this)">
-          <img src="images/HomePage Slider/7.jpg" data-full-src="images/HomePage Slider/7-large.jpg" alt="Photo 7" class="slider-image" onclick="openLightbox(this)">
-          <img src="images/HomePage Slider/8.jpg" data-full-src="images/HomePage Slider/8-large.jpg" alt="Photo 8" class="slider-image" onclick="openLightbox(this)">
-      </div>
-  </div>
-</section>
 
-<!-- Lightbox Popup -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img" alt="Enlarged Image">
-</div>
+<!-- Include Image Slider -->
+<link rel="stylesheet" href="components/imageSlider.css">
+<section class="image-slider">
+  <?php include 'components/imageSlider.html'; ?>
+</section>
+<script src="components/imageSlider.js"></script>
+
 <!-- Services Section -->
 <section class="services-section">
     <div class="services-card">
