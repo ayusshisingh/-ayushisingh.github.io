@@ -1,3 +1,4 @@
+<!-- ImageSlider.html -->
 <section class="instagram-slider">
 	<div class="slider-container">
 		<div class="slider">
@@ -11,11 +12,88 @@
 			<img src="images/HomePage Slider/8.jpg" data-full-src="images/HomePage Slider/8-large.jpg" alt="Photo 8" class="slider-image" onclick="openLightbox(this)">
 		</div>
 	</div>
+  
+	<!-- Lightbox Popup -->
+	<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+		<span class="close">&times;</span>
+		<img class="lightbox-content" id="lightbox-img" alt="Enlarged Image">
+	</div>
   </section>
   
-  <!-- Lightbox Popup -->
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-	<span class="close">&times;</span>
-	<img class="lightbox-content" id="lightbox-img" alt="Enlarged Image">
-  </div>
+  <script>
+	// Open Lightbox
+	function openLightbox(imgElement) {
+		const lightbox = document.getElementById('lightbox');
+		const lightboxImg = document.getElementById('lightbox-img');
+		lightboxImg.src = imgElement.getAttribute("data-full-src");
+		lightbox.style.display = 'flex';
+	}
+  
+	// Close Lightbox
+	function closeLightbox() {
+		document.getElementById('lightbox').style.display = 'none';
+	}
+  
+	// Slider Looping
+	const slider = document.querySelector('.slider');
+	let scrollInterval;
+  
+	function startSliderLoop() {
+		scrollInterval = setInterval(() => {
+			slider.scrollBy({
+				left: 100, // Adjust left offset to change scroll speed
+				behavior: 'smooth'
+			});
+  
+			if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
+				slider.scrollLeft = 0; // Reset to the beginning
+			}
+		}, 4000); // Change interval to slow down the speed
+	}
+  
+	function stopSliderLoop() {
+		clearInterval(scrollInterval);
+	}
+  
+	window.onload = function() {
+		startSliderLoop();
+		slider.addEventListener('mouseenter', stopSliderLoop);
+		slider.addEventListener('mouseleave', startSliderLoop);
+	};
+  </script>
+  
+  <style>
+	.instagram-slider {
+		max-width: 100%;
+		overflow: hidden;
+	}
+  
+	.slider {
+		display: flex;
+		transition: transform 0.5s ease-in-out;
+	}
+  
+	.slider img {
+		width: 100%; /* Adjust this value to make images larger */
+		height: auto; /* Maintain aspect ratio */
+		flex-shrink: 0;
+	}
+  
+	.lightbox {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		justify-content: center;
+		align-items: center;
+	}
+  
+	.lightbox-content {
+		max-width: 90%;
+		max-height: 90%;
+	}
+  </style>
   
