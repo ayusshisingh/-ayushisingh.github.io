@@ -9,150 +9,174 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/include.js"></script> 
     <link rel="icon" href="/images/Favicon.png" type="image/png">
-    <style>
-        /* Style for Testimonial Slider */
-        .testimonial-slider {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            background-color: #f8f9fa;
-            padding: 30px 0;
-        }
-        .slider-wrapper {
-            display: flex;
-            width: 500%;
-            animation: slide 25s infinite;
-        }
-        .testimonial-slide {
-            flex: 1 0 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 0 10px;
-        }
-        .testimonial-slide h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .testimonial-slide p {
-            font-size: 1em;
-        }
-        .client-info, .client-position {
-            font-weight: bold;
-            color: #6c757d;
-        }
 
-        /* Keyframes for sliding effect */
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            20% { transform: translateX(0); }
-            25% { transform: translateX(-100%); }
-            45% { transform: translateX(-100%); }
-            50% { transform: translateX(-200%); }
-            70% { transform: translateX(-200%); }
-            75% { transform: translateX(-300%); }
-            95% { transform: translateX(-300%); }
-            100% { transform: translateX(0); }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .slider-wrapper {
-                width: 500%;
-            }
-            .testimonial-slide {
-                flex: 1 0 100%;
-                font-size: 0.9em;
-                padding: 15px;
-            }
-            .testimonial-slide h3 {
-                font-size: 1.2em;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <div include-html="components/navbar.html"></div>
-
     <!-- Hero Section -->
     <div class="hero">
         <img src="/images/Banners/4.jpg" alt="Hero Image" class="hero-image">
         <div class="hero-content">
             <h1>My Tech Projects</h1>
             <p>As a Python expert, I've developed various products ranging from web applications to data analysis tools. My approach is always focused on efficiency, scalability, and user experience</p>
-            <a href="https://github.com/TechWithHer" class="cta-button" target="_blank">GitHub #TechWithHer</a>
+            <a href="https://github.com/TechWithHer" class="cta-button" target = "_blank">GitHub #TechWithHer</a>
         </div>
     </div>
 
-    <!-- Projects Section -->
-    <section class="projects-section">
-        <h2 class="section-heading">Projects Done and In Progress...</h2>
-        <!-- Project 1 -->
-        <div class="project-section">
-            <img src="images/project 1.png" alt="Project 1" class="project-image">
-            <div class="project-info">
-                <h3 class="project-title">Automated Data Analytics Platform</h3>
-                <p class="project-description">Automates data collection, cleaning, and analysis, with real-time dashboards, automated reports, and visualizations. Industries: Finance, Healthcare, E-Commerce</p>
-                <p><b>Technologies Used:</b> Python (Pandas, NumPy), SQL/NoSQL, Data Visualization Libraries (Matplotlib, Seaborn), Dash/Flask</p>
-            </div>
+<!------------Client List---------------------------------------------------------------------------------->
+<!-- Projects Section -->
+<section class="projects-section">
+    <h2 class="section-heading">Projects Done and In Progress...</h2>
+    
+    <!-- Project 1 -->
+    <div class="project-section">
+        <img src="images/project 1.png" alt="Project 1" class="project-image">
+        <div class="project-info">
+            <h3 class="project-title">Automated Data Analytics Platform</h3>
+            <p class="project-description">
+                Automates data collection, cleaning, and analysis, with real-time dashboards, automated reports, and visualizations.
+            Industries: Finance, Healthcare, E-Commerce	
+            <br>
+            <br>
+            <b>Technologies Used:</b> Python (Pandas, NumPy), SQL/NoSQL, Data Visualization Libraries (Matplotlib, Seaborn), Dash/Flask
+            <br>
+            <br>
+            <b>Industries:</b> Finance, Healthcare, E-Commerce
+        
+        </p>        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-section">
+        <img src="images/project 2.png" alt="Project 1" class="project-image">
+        <div class="project-info">
+            <h3 class="project-title">Chatbot for Customer Support</h3>
+            <p class="project-description">
+                Handles customer queries, provides instant support, and automates routine tasks via websites, social media, and messaging apps.
+            <br>
+            <br>
+            <b>Technologies Used:</b> Python (NLTK, SpaCy), Machine Learning (TensorFlow/Keras), APIs (Twilio, Dialogflow), JavaScript
+
+            <br>
+            <br>
+            <b>Industries:</b> Retail, Travel & Hospitality, Healthcare	
+        
+        </p>        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-section">
+        <img src="images/project 3.png" alt="Project 1" class="project-image">
+        <div class="project-info">
+            <h3 class="project-title">Fraud Detection System</h3>
+            <p class="project-description">
+                Detects fraudulent activities by analyzing patterns and anomalies in transactions, reducing the risk of fraud.            <br>
+            <br>
+            <b>Technologies Used:</b>Python (Scikit-learn, TensorFlow/Keras), Anomaly Detection Algorithms, SQL/NoSQL
+
+            <br>
+            <br>
+            <b>Industries:</b> Finance, E-Commerce, Insurance	
+        
+        </p>
         </div>
+    </div>
 
-        <!-- Add more projects similarly -->
-    </section>
+    <!-- Project 4 -->
+    <div class="project-section">
+        <img src="images/project 4.png" alt="Project 1" class="project-image">
+        <div class="project-info">
+            <h3 class="project-title">Document Management and Automation</h3>
+            <p class="project-description">
+                Automates document processing including data extraction, classification, and storage. Handles scanning, text extraction, and workflow automation            <br>
+            <b>Technologies Used:</b>Python (OCR Libraries like Tesseract, NLP Libraries, Document Processing Tools)
 
-    <!-- Testimonial Slider Section -->
-    <section class="testimonial-slider">
-        <div class="slider-wrapper">
-            <!-- Slide 1 -->
-            <div class="testimonial-slide">
-                <h3>Completely transformed our Operations</h3>
-                <p>"We now have a streamlined platform that not only tracks our manufacturing process in real time but also gives our customers the transparency they needed."</p>
-                <p class="client-info">R Verma</p>
-                <p class="client-position">Zenith Manufacturing</p>
-            </div>
-            <!-- Slide 2 -->
-            <div class="testimonial-slide">
-                <h3>Highly Recommend</h3>
-                <p>"Working with Ayushi and the team was a game-changer for us. Their tech platform simplified our customer interactions and delivery tracking while maintaining a user-friendly interface."</p>
-                <p class="client-info">Laura Kim</p>
-                <p class="client-position">Cloudscape Solutions</p>
-            </div>
-            <!-- Slide 3 -->
-            <div class="testimonial-slide">
-                <h3>Exceptional Results</h3>
-                <p>"We saw a remarkable increase in productivity after implementing the solutions provided by Strenure AI. Their expertise is top-notch."</p>
-                <p class="client-info">Marcus Thompson</p>
-                <p class="client-position">TechWave Innovations</p>
-            </div>
-            <!-- Slide 4 -->
-            <div class="testimonial-slide">
-                <h3>Outstanding Support</h3>
-                <p>"Their post-launch support is just as impressive as the development process. We're grateful for their continuous dedication."</p>
-                <p class="client-info">Emily Johnson</p>
-                <p class="client-position">CloudWorks</p>
-            </div>
-            <!-- Slide 5 -->
-            <div class="testimonial-slide">
-                <h3>Top-Quality Solutions</h3>
-                <p>"Her solutions are innovative and incredibly reliable. We are happy with the outcome of our collaboration."</p>
-                <p class="client-info">Michael Brown</p>
-                <p class="client-position">Smart Solutions Inc.</p>
-            </div>
+            <br>
+            <br>
+            <b>Industries:</b> Legal, Healthcare, Corporate	
+        
+        </p>
         </div>
-    </section>
+    </div>
 
+    <!-- Project 5 -->
+    <div class="project-section">
+        <img src="images/project 5.png" alt="Project 1" class="project-image">
+        <div class="project-info">
+            <h3 class="project-title">Sales and Marketing Automation
+            </h3>
+            <p class="project-description">
+                Automates marketing campaigns, lead management, and sales processes with personalized email campaigns and lead scoring.	            <br>
+            <b>Technologies Used:</b>Python (Flask/Django), Email Automation Tools (SMTP), CRM APIs
+            <br>
+            <br>
+            <b>Industries:</b> Finance, E-Commerce, Insurance	
+        
+        </p>
+        </div>
+    </div>
+</section>
+
+
+
+        <!---------------------------------------------------------------------------------------------->
+<!-- Testimonial Slider Section -->
+<section class="testimonial-slider">
+    <div class="slider-wrapper">
+        <!-- Slide 1 -->
+        <div class="testimonial-slide">
+            <h3>Completely transformed our Operations</h3>
+            <p>"We now have a streamlined platform that not only tracks our manufacturing process in real time but also gives our customers the transparency they needed."</p>
+            <p class="client-info">R Verma</p>
+            <p class="client-position">Zenith Manufacturing</p>
+        </div>
+        <!-- Slide 2 -->
+        <div class="testimonial-slide">
+            <h3>Highly Recommend</h3>
+            <p>"Working with Ayushi and the team was a game-changer for us. Their tech platform simplified our customer interactions and delivery tracking while maintaining a user-friendly interface."</p>
+            <p class="client-info"> Laura Kim</p>
+            <p class="client-position">Cloudscape Solutions</p>
+        </div>
+        <!-- Slide 3 -->
+        <div class="testimonial-slide">
+            <h3>Exceptional Results</h3>
+            <p>"We saw a remarkable increase in productivity after implementing the solutions provided by Strenure AI. Their expertise is top-notch."</p>
+            <p class="client-info">Marcus Thompson</p>
+            <p class="client-position">TechWave Innovations</p>
+        </div>
+        <!-- Slide 4 -->
+        <div class="testimonial-slide">
+            <h3>Outstanding Support</h3>
+            <p>"Their post-launch support is just as impressive as the development process. We're grateful for their continuous dedication."</p>
+            <p class="client-info">Emily Johnson</p>
+            <p class="client-position">CloudWorks</p>
+        </div>
+        <!-- Slide 5 -->
+        <div class="testimonial-slide">
+            <h3>Top-Quality Solutions</h3>
+            <p>"Her solutions are innovative and incredibly reliable. We are happy with the outcome of our collaboration."</p>
+            <p class="client-info">Michael Brown</p>
+            <p class="client-position">Smart Solutions Inc.</p>
+        </div>
+    </div>
+</section>
+
+
+ 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
-    <script>
-        fetch('components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        });
-    </script>
+<script>
+    fetch('components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
 </body>
 </html>
+
+
+    
+
