@@ -40,7 +40,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }
 });
 
-// Testimonial Slider
+// Select all testimonials
 const testimonials = document.querySelectorAll('.testimonial');
 let testimonialIndex = 0;
 
@@ -54,11 +54,13 @@ function showTestimonial(index) {
 // Show the initial testimonial
 showTestimonial(testimonialIndex);
 
-// Rotate testimonials every 5 seconds
+// Rotate testimonials every 5 seconds in an endless loop
 setInterval(() => {
-    testimonialIndex = (testimonialIndex + 1) % testimonials.length; // Move to next testimonial
+    testimonialIndex = (testimonialIndex + 1) % testimonials.length; // Loop back to the first when at the end
     showTestimonial(testimonialIndex);
 }, 5000);
+
+// If more control is needed, you could add manual navigation later on
 
 // Reviews Slide
 document.addEventListener('DOMContentLoaded', function() {
