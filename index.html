@@ -16,15 +16,7 @@
 <body>
 
 <!-- Navigation Bar Section -->
-<div id="navbar-placeholder"></div>
-<script>
-    fetch('navbar.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-    });
-</script>
-
+<div include-html="components/navbar.html"></div>
 <!-- End of Navigation Bar Section -->
 
 <!-- Hero Section -->
