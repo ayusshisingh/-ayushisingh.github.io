@@ -14,7 +14,16 @@
 
 <body>
     <!-- Navigation Bar -->
-    <div include-html="components/navbar.html"></div>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
+
+
     <!-- Hero Section -->
     <div class="hero">
         <img src="/images/Banners/4.jpg" alt="Hero Image" class="hero-image">
