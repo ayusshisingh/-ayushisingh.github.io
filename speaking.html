@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,54 +11,43 @@
     <script src="js/include.js"></script> 
     <link rel="icon" href="/images/Favicon.png" type="image/png">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">YourBrand</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div include-html="components/navbar.html"></div>
 
 <!-- Hero Section -->
 <div class="hero">
-  <img src="/images/Banners/9.jpg" alt="Hero Image" class="img-fluid hero-image">
-  <div class="hero-content text-center">
+  <img src="/images/Banners/9.jpg" alt="Hero Image" class="hero-image">
+  <div class="hero-content">
     <h1>Empowering Minds, Transforming Lives</h1>
     <p>Helping people by making them understand human and non-human brain!</p>
-    <a href="#cta" class="btn btn-primary">Get Started</a> 
+    <a href="#cta" class="cta-button">Get Started</a> 
   </div>
 </div>
-
 <!-- Speaking Engagements Image Slider -->
-<section class="image-slider py-4">
-  <div class="slider-wrapper d-flex justify-content-center">
-      <img src="images/photo1.jpg" alt="Image 1" class="img-fluid mx-2">
-      <img src="images/photo2.jpg" alt="Image 2" class="img-fluid mx-2">
-      <img src="images/photo3.jpg" alt="Image 3" class="img-fluid mx-2">
-      <img src="images/photo4.jpg" alt="Image 4" class="img-fluid mx-2">
-      <img src="images/photo5.jpg" alt="Image 5" class="img-fluid mx-2">
+
+<section class="image-slider">
+  <div class="slider-wrapper">
+      <img src="images/photo1.jpg" alt="Image 1">
+      <img src="images/photo2.jpg" alt="Image 2">
+      <img src="images/photo3.jpg" alt="Image 3">
+      <img src="images/photo4.jpg" alt="Image 4">
+      <img src="images/photo5.jpg" alt="Image 5">
+      <img src="images/photo6.jpg" alt="Image 6">
+      <img src="images/photo7.jpg" alt="Image 7">
+      <img src="images/photo8.jpg" alt="Image 8">
+      <img src="images/photo9.jpg" alt="Image 9">
+      <img src="images/photo10.jpg" alt="Image 10">
   </div>
 </section>
-
 <!-- Speaking Engagements Video -->
 <section id="speaking-engagements" class="py-5">
   <div class="container">
@@ -92,8 +79,8 @@
         </div>
       </div>
 
-       <!-- Video 3 -->
-       <div class="col">
+      <!-- Video 3 -->
+      <div class="col">
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title">Child of True Lovers - Book Launch Trailer</h5>
@@ -218,7 +205,6 @@
  </div>
 </section>
 
-
 <!-- Footer -->
 <div id="footer-placeholder"></div>
 <script>
@@ -232,3 +218,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-DRKmzJXT+ctBqzZHzS2DxKKniy58KPB5tH8vtsSYmMmA9r2owgWTFSFAmIAGJZZY" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
