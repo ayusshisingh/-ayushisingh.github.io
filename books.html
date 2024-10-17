@@ -12,7 +12,15 @@
     <link rel="icon" href="/images/Favicon.png" type="image/png">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("div[include-html='components/navbar.html']").innerHTML = data;
+            });
+    });
+</script>
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
