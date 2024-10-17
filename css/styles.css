@@ -337,7 +337,8 @@ a:hover {
     transition: background-color 0.3s ease;
 }
 .cta-button:hover {
-    background-color: #080416;
+    background-color: #5027e5;
+    color: white;
 }
 
 /* Contact Form Section Styling */
@@ -895,6 +896,7 @@ footer {
 
 .btn {
     margin-top: 10px; /* Spacing above button */
+    margin-bottom: 10px;
     background-color: #007bff; /* Bootstrap primary color */
     color: white; /* Button text color */
     border: none; /* No border */
