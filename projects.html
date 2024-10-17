@@ -12,32 +12,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/include.js"></script> 
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Brand</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div include-html="components/navbar.html"></div>
 
     <!-- Hero Section -->
     <div class="hero">
         <img src="/images/Banners/4.jpg" alt="Hero Image" class="hero-image">
         <div class="hero-content">
             <h1>My Tech Projects</h1>
-            <p>As a Python expert, I've developed various products ranging from web applications to data analysis tools. My approach is always focused on efficiency, scalability, and user experience.</p>
+            <p>As a Python expert, I've developed various products ranging from web applications to data analysis tools. My approach is always focused on efficiency, scalability, and user experience</p>
             <a href="https://github.com/TechWithHer" class="cta-button" target="_blank">GitHub #TechWithHer</a>
         </div>
     </div>
@@ -53,21 +40,20 @@
                 <h3 class="project-title">Automated Data Analytics Platform</h3>
                 <p class="project-description">
                     Automates data collection, cleaning, and analysis, with real-time dashboards, automated reports, and visualizations.
-                    <br><b>Technologies Used:</b> Python (Pandas, NumPy), SQL/NoSQL, Data Visualization (Matplotlib, Seaborn), Dash/Flask
+                    <br><b>Technologies Used:</b> Python (Pandas, NumPy), SQL/NoSQL, Data Visualization Libraries (Matplotlib, Seaborn), Dash/Flask
                     <br><b>Industries:</b> Finance, Healthcare, E-Commerce
                 </p>
             </div>
         </div>
 
-        <!-- Other Projects (repeating the same structure) -->
         <!-- Project 2 -->
         <div class="project-section">
             <img src="images/project 2.png" alt="Project 2" class="project-image">
             <div class="project-info">
                 <h3 class="project-title">Chatbot for Customer Support</h3>
                 <p class="project-description">
-                    Handles customer queries and automates routine tasks.
-                    <br><b>Technologies Used:</b> Python (NLTK, SpaCy), TensorFlow/Keras, APIs (Twilio, Dialogflow), JavaScript
+                    Handles customer queries, provides instant support, and automates routine tasks via websites, social media, and messaging apps.
+                    <br><b>Technologies Used:</b> Python (NLTK, SpaCy), Machine Learning (TensorFlow/Keras), APIs (Twilio, Dialogflow), JavaScript
                     <br><b>Industries:</b> Retail, Travel & Hospitality, Healthcare
                 </p>
             </div>
@@ -79,14 +65,38 @@
             <div class="project-info">
                 <h3 class="project-title">Fraud Detection System</h3>
                 <p class="project-description">
-                    Detects fraudulent activities using anomaly detection algorithms.
-                    <br><b>Technologies Used:</b> Python (Scikit-learn, TensorFlow/Keras), SQL/NoSQL
+                    Detects fraudulent activities by analyzing patterns and anomalies in transactions, reducing the risk of fraud.
+                    <br><b>Technologies Used:</b> Python (Scikit-learn, TensorFlow/Keras), Anomaly Detection Algorithms, SQL/NoSQL
                     <br><b>Industries:</b> Finance, E-Commerce, Insurance
                 </p>
             </div>
         </div>
 
-        <!-- Add more project sections here if needed -->
+        <!-- Project 4 -->
+        <div class="project-section">
+            <img src="images/project 4.png" alt="Project 4" class="project-image">
+            <div class="project-info">
+                <h3 class="project-title">Document Management and Automation</h3>
+                <p class="project-description">
+                    Automates document processing including data extraction, classification, and storage. Handles scanning, text extraction, and workflow automation.
+                    <br><b>Technologies Used:</b> Python (OCR Libraries like Tesseract, NLP Libraries, Document Processing Tools)
+                    <br><b>Industries:</b> Legal, Healthcare, Corporate
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-section">
+            <img src="images/project 5.png" alt="Project 5" class="project-image">
+            <div class="project-info">
+                <h3 class="project-title">Sales and Marketing Automation</h3>
+                <p class="project-description">
+                    Automates marketing campaigns, lead management, and sales processes with personalized email campaigns and lead scoring.
+                    <br><b>Technologies Used:</b> Python (Flask/Django), Email Automation Tools (SMTP), CRM APIs
+                    <br><b>Industries:</b> Finance, E-Commerce, Insurance
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Testimonial Slider Section -->
@@ -94,11 +104,34 @@
         <div class="slider-wrapper">
             <div class="testimonial-slide">
                 <h3>Completely transformed our Operations</h3>
-                <p>"We now have a streamlined platform that tracks our manufacturing process in real time."</p>
+                <p>"We now have a streamlined platform that not only tracks our manufacturing process in real time but also gives our customers the transparency they needed."</p>
                 <p class="client-info">R Verma</p>
                 <p class="client-position">Zenith Manufacturing</p>
             </div>
-            <!-- Add more testimonial slides as needed -->
+            <div class="testimonial-slide">
+                <h3>Highly Recommend</h3>
+                <p>"Working with Ayushi and the team was a game-changer for us. Their tech platform simplified our customer interactions and delivery tracking while maintaining a user-friendly interface."</p>
+                <p class="client-info">Laura Kim</p>
+                <p class="client-position">Cloudscape Solutions</p>
+            </div>
+            <div class="testimonial-slide">
+                <h3>Exceptional Results</h3>
+                <p>"We saw a remarkable increase in productivity after implementing the solutions provided by Strenure AI. Their expertise is top-notch."</p>
+                <p class="client-info">Marcus Thompson</p>
+                <p class="client-position">TechWave Innovations</p>
+            </div>
+            <div class="testimonial-slide">
+                <h3>Outstanding Support</h3>
+                <p>"Their post-launch support is just as impressive as the development process. We're grateful for their continuous dedication."</p>
+                <p class="client-info">Emily Johnson</p>
+                <p class="client-position">CloudWorks</p>
+            </div>
+            <div class="testimonial-slide">
+                <h3>Top-Quality Solutions</h3>
+                <p>"Her solutions are innovative and incredibly reliable. We are happy with the outcome of our collaboration."</p>
+                <p class="client-info">Michael Brown</p>
+                <p class="client-position">Smart Solutions Inc.</p>
+            </div>
         </div>
     </section>
 
@@ -111,5 +144,6 @@
                 document.getElementById('footer-placeholder').innerHTML = data;
             });
     </script>
+
 </body>
 </html>
