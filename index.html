@@ -123,6 +123,7 @@
 </div>
 
 </section>
+
 <!-- ImageSlider.html -->
 <section class="instagram-slider">
 	<div class="slider-container">
@@ -199,9 +200,17 @@ window.onload = function() {
 }
 
 .slider img {
-	width: 100%; /* Adjust this value to make images larger */
-	height: auto; /* Maintain aspect ratio */
+	width: 100%; /* Default for mobile - full width */
+	height: auto;
 	flex-shrink: 0;
+}
+
+/* Adjust for desktop screens */
+@media (min-width: 768px) {
+	.slider img {
+		width: 80%; /* Smaller image size for desktop */
+		height: auto;
+	}
 }
 
 .lightbox {
@@ -219,6 +228,15 @@ window.onload = function() {
 .lightbox-content {
 	max-width: 90%;
 	max-height: 90%;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
 }
 </style>
 
